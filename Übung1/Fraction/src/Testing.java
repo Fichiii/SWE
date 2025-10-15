@@ -5,12 +5,14 @@ public class Testing {
             Fraction test1 = new Fraction(1,2);
             Fraction test2 = new Fraction(5,10);
             Fraction test3 = new Fraction(-20,2);
+            
 
 
             System.out.println("Test fürs Erstellen:");
             System.out.println(test1.toString());
             System.out.println(test2.toString());
             System.out.println(test3.toString());
+            
 
 
 

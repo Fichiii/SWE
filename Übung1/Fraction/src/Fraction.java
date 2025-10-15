@@ -1,6 +1,6 @@
 public class Fraction {
-    int zähler;
-    int nenner;
+    private int zähler;
+    private int nenner;
 
     public Fraction(int n){
         this(n,1);
