@@ -10,6 +10,11 @@ public class Fraction {
             if(nenner == 0){ throw new IllegalArgumentException("Man darf nicht durch 0 Teilen!"); }
             this.zähler = zähler /Helper.ggT(zähler,nenner);
             this.nenner = nenner /Helper.ggT(zähler,nenner);
+
+            if(this.nenner < 0){
+                this.zähler = -this.zähler;
+                this.nenner = -this.nenner;
+            }
     }
     
     public Fraction multiply(int factor){
