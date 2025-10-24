@@ -1,0 +1,55 @@
+Aufgabe 3:
+
+1.Repository erstellen:
+
+	- Git Hub auf new Repository erstellen Klicken
+	- git init in einem Ordner auf dem PC
+
+
+2.Arbeiten mit Arbeitsverzeichnissen:
+
+	- man kann mit git add . seine Arbeit in die Staging Area packen
+
+
+3.Dateien zur Versionskontrolle hinzufügen
+
+	- git add . für alle oder git add <file> um eine Datei allein in die Staging Area zu verschieben
+	- git commit -m "" um die Änderungen zu speichern im Repo
+
+
+4.Änderungen rückgängig machen
+
+	- wenn noch nicht geadded -> git restore <file>
+	- wenn geadded -> git reset HEAD -- <file> //Mit HEAD kannst du auf jeden Branch zugreifen.Alternativ main
+	- wenn commited -> git log und die commit-ID kopieren, dann git revert commit-ID
+
+
+5.Änderungen synchronisieren
+
+	- sein Repo mit GitHub verbinden -> git remote add origin <URL>
+	- mit git push -u origin main pushen
+	- mit git pull origin main pullen
+
+
+6.Verschieben, Löschen und Umbenennen
+
+	- Umbenennen -> git mv test.txt neuer_name.txt und dann commiten
+	- Löschen -> git rm neuer_name.txt und dann commiten
+	- Verschieben -> git mv test.txt dokumente/ und dann commiten
+
+
+7.Arbeiten mit Branches
+
+	- Branch erstellen -> git branch newBranch
+	- Zum Branch switchen -> git switch newBranch
+	- Branches auflisten -> git branch
+	- Branches mergen -> git merge newBranch //Füge die neuen Änderungen in den main branch wieder ein
+	- Branches umbennen -> git branch -M main //bennent den branch auf dem du dich befindest um
+
+
+8.Zusammenführen eines Branches mit dem Hauptentwicklungspfad mit unterschiedlichen Änderungen in derselben Datei (Merge Konflikt)
+
+	- manuell bearbeiten -> Pfeile entfernen und die gewünschte Version speichern
+	- Meine Version behalten -> git checkout --ours <file>
+	- Die andere Version behalten -> git checkout --theirs <file>
+	- Am Ende commiten mit git commit
