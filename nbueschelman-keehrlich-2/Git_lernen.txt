@@ -9,6 +9,7 @@ Aufgabe 3:
 2.Arbeiten mit Arbeitsverzeichnissen:
 
 	- man kann mit git add . seine Arbeit in die Staging Area packen
+	- mit git status überprüfen, ob die Datei auch dort drinne gelandet ist
 
 
 3.Dateien zur Versionskontrolle hinzufügen
@@ -20,7 +21,7 @@ Aufgabe 3:
 4.Änderungen rückgängig machen
 
 	- wenn noch nicht geadded -> git restore <file>
-	- wenn geadded -> git reset HEAD -- <file> //Mit HEAD kannst du auf jeden Branch zugreifen.Alternativ main
+	- wenn geadded -> git reset HEAD -- <file> oder git restore --staged <file> //Mit HEAD kannst du auf jeden Branch zugreifen. Alternativ main
 	- wenn commited -> git log und die commit-ID kopieren, dann git revert commit-ID
 
 
