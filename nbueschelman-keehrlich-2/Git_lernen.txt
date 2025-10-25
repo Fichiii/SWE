@@ -22,7 +22,8 @@ Aufgabe 3:
 
 	- wenn noch nicht geadded -> git restore <file>
 	- wenn geadded -> git reset HEAD -- <file> oder git restore --staged <file> //Mit HEAD kannst du auf jeden Branch zugreifen. Alternativ main
-	- wenn commited -> git log und die commit-ID kopieren, dann git revert commit-ID
+	- wenn commited -> git log und die commit-ID kopieren, dann git revert commit-ID //Dies macht die Änderungen Rückgängig und erstellt einen neuen commit
+	- wenn commited -> git restore --source commit-ID <file> wird der file aus dem commit genommen und inder jetzigen damit überschrieben
 
 
 5.Änderungen synchronisieren
