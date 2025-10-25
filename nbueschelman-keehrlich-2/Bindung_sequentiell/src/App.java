@@ -1,11 +1,11 @@
 public class App {
     public static void main(String[] args) throws Exception {
         int array[] = new int[1000];
-        create_Array(array);
+        gauß_sum(array);
     }
 
     //Array wird befüllt
-    public static void create_Array(int[] array){
+    public static void gauß_sum(int[] array){
         for (int i = 0; i < 1000; i++)
         {
             array[i] = i;
