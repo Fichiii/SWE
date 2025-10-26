@@ -17,7 +17,7 @@ public class App {
     public static void add_Array(int[] array)
     {
         int sum = 0;
-        for(int i = 0; i < 1000; i++)
+        for(int i = 0; i < array.length; i++)
         {
             sum += array[i];
         }
